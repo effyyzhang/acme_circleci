@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "SECRET=FOO DATABASE_URL=postgres://localhost/my_db mocha spec.js",
+    "test": "SECRET=FOO DATABASE_URL=postgres://postgres@localhost/circle_test mocha spec.js",
     "start": "node server.js",
     "start:dev": "npm run webpack & SECRET=FOO nodemon server.js --ignore dist/ --ignore src/",
     "webpack": "webpack --mode=development --watch"
